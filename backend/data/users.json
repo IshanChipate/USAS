@@ -1,0 +1,32 @@
+[
+  {
+    "id": "usr-planner-01",
+    "email": "planner@urban.maharashtra.gov.in",
+    "name": "Shri Rajesh Deshmukh",
+    "password_hash": "2e91c03109472c89a558db3f0e618a7f$1c19de1590e29111fac76f1187abfa97175a381786935c49830e17b2ea3b7a41",
+    "role": "Senior Urban Planner",
+    "department": "State Urban Development Department (UDD)",
+    "city": "Statewide / Maharashtra",
+    "created_at": 1772400000
+  },
+  {
+    "id": "usr-commissioner-02",
+    "email": "commissioner@punecorp.gov.in",
+    "name": "Dr. Suhas Diwase, IAS",
+    "password_hash": "f6b0d3643eb6fb97c587e03126e138c1$2dcafe3ee147a1b74bb0db0fcd29b4668ab91f5bc7e10a8ef98fc1d0e23b22c0",
+    "role": "Municipal Administrator",
+    "department": "Pune Municipal Corporation (PMC)",
+    "city": "Pune",
+    "created_at": 1772400000
+  },
+  {
+    "id": "usr-auditor-03",
+    "email": "auditor@mpcb.gov.in",
+    "name": "Pravin Patil",
+    "password_hash": "1ce93ab65e4cb3a9184429457ec791fa$40fc55e524de562f6ccb93ad0a298da3d74edd81c1509ad636afe4ad45c7a9fc",
+    "role": "Environmental Auditor",
+    "department": "Maharashtra Pollution Control Board (MPCB)",
+    "city": "Statewide / Environmental Cell",
+    "created_at": 1772400000
+  }
+]

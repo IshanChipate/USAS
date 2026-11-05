@@ -1,0 +1,417 @@
+name,population,waste_generated_mt_day,waste_treated_mt_day,segregation_pct,transport_pct,processing_facility,source_page,treatment_efficiency_pct
+Municipal Corporation of Greater Mumbai,12967996.0,7359.0,6573.6,82.0,100.0,"Composting, Vermi composting, Bio-methanation, Refuse Derived Fuel, Waste to Energy",18,89.32735426008969
+Navi Mumbai Municipal Corporation,1120547.0,803.0,739.2,100.0,100.0,"Composting, Refuse Derived Fuel",18,92.05479452054796
+Uran Municipal Council,32000.0,13.0,13.0,100.0,100.0,-,18,100.0
+Kalyan Dombivli Municipal Corporation,1518762.0,715.0,638.0,65.0,100.0,Composting,19,89.23076923076924
+Ulhasnagar Municipal Corporation,556098.0,258.5,149.98,40.0,100.0,Composting,19,58.01934235976789
+Bhiwandi- Nizampur Municipal Corporation,709965.0,440.0,85.0,80.0,100.0,Composting,19,19.318181818181817
+Ambarnath Municipal Council,305000.0,173.8,111.1,62.0,100.0,Composting,19,63.92405063291139
+Kulgaon Badlapur Municipal Council,174226.0,115.5,65.45,70.0,100.0,"Composting, Vermi composting, Bio- methanation",19,56.666666666666664
+Murbad Nagar Panchayat,21080.0,6.6,6.6,100.0,100.0,Composting,19,100.0
+Shahapur Nagar Panchayat,11623.0,4.95,4.95,100.0,100.0,Composting,19,100.0
+Wada Nagar Panchayat,24000.0,8.25,7.15,100.0,100.0,Composting,19,86.66666666666667
+Thane Municipal Corporation,2598482.0,1035.93,1022.329,100.0,100.0,"Composting, Bio- methanation",20,98.68707345090884
+Vasai-Virar City Municipal Corporation,2450404.0,754.6,514.8,85.0,100.0,Composting,20,68.22157434402331
+Mira Bhaindar Municipal Corporation,814786.0,500.5,451.0,100.0,100.0,"Composting, Refuse Derived Fuel",20,90.10989010989012
+Dahanu Municipal Council,50287.0,20.9,20.9,85.0,100.0,Composting,20,100.0
+Palghar Municipal Council,68930.0,33.0,22.0,96.0,100.0,Composting,20,66.66666666666666
+Jawhar Municipal Council,12040.0,5.5,5.5,90.0,100.0,Composting,20,100.0
+Mokhada Nagar Panchayat,10273.0,3.85,2.2,100.0,100.0,"Composting, Vermi composting",20,57.14285714285715
+Talasari Nagar Panchayat,18722.0,6.71,6.71,0.0,100.0,Composting,20,100.0
+Vikramgad Nagar Panchayat,8340.0,2.86,2.002,90.0,70.0,Composting,20,70.0
+Panvel Municipal Corporation,510201.0,470.0,423.0,85.0,100.0,Composting,21,90.0
+Khopoli Municipal Council,71141.0,33.0,31.9,100.0,100.0,"Composting, Waste to Energy",21,96.66666666666667
+Alibag Municipal Council,20743.0,7.7,7.15,100.0,100.0,"Composting, Bio- methanation",21,92.85714285714286
+Karjat Municipal Council,29663.0,13.2,13.2,100.0,100.0,"Composting, Bio- methanation",21,100.0
+Mahad Municipal Council,31000.0,15.4,15.4,100.0,100.0,Bio-methanation,21,100.0
+Matheran Municipal Council,4443.0,3.1,3.1,100.0,100.0,Bio-methanation,21,100.0
+Murud-Janjira Municipal Council,12226.0,5.0,5.0,100.0,93.41,Composting,21,100.0
+Pen Municipal Council,44794.0,16.5,16.06,100.0,100.0,Composting,21,97.33333333333333
+Roha Municipal Council,23596.0,8.8,8.8,93.0,100.0,"Composting, Bio- methanation",21,100.0
+Shrivardhan Municipal Council,16389.0,5.17,4.84,100.0,100.0,Composting,21,93.61702127659575
+Khalapur Nagar Panchayat,6421.0,2.86,2.86,100.0,100.0,Composting,22,100.0
+Mangaon Nagar Panchayat,18740.0,12.1,3.3,85.0,100.0,Composting,22,27.27272727272727
+Mhasala Nagar Panchayat,10121.0,4.4,3.85,80.0,100.0,Composting,22,87.5
+Pali,10549.0,3.3,3.19,80.0,100.0,Composting,22,96.66666666666667
+Poladpur Nagar Panchayat,7633.0,2.2,2.2,100.0,100.0,Composting,22,100.0
+Tala Nagar Panchayat,6981.0,2.651,2.31,100.0,95.44,"Composting, Vermi composting",22,87.13692946058093
+Ichalkaranji Municipal Corporation,354000.0,118.8,118.8,100.0,100.0,"Composting, Bio- methanation",22,100.0
+Sangli-Miraj & Kupwad Municipal Corporation,557000.0,236.5,213.4,100.0,100.0,"Composting, Refuse Derived Fuel",22,90.23255813953489
+Kolhapur Municipal Corporation,607819.0,222.2,200.2,0.0,99.01,"Composting, Biomethanation, Refuse Derived Fuel",23,90.0990099009901
+Ratnagiri Municipal Council,76479.0,22.0,22.0,100.0,100.0,Composting,23,100.0
+Chiplun Municipal Council,55139.0,16.5,15.4,100.0,100.0,"Composting, Bio- methanation",23,93.33333333333333
+Islampur Municipal Council,84441.0,19.448,19.448,100.0,100.0,Composting,23,100.0
+Jaysingpur Municipal Council,53585.0,18.755,18.744,100.0,100.0,Composting,23,99.94134897360705
+Vita Municipal Council,55000.0,16.5,16.5,100.0,100.0,"Composting, Bio- methanation",23,100.0
+Malvan Municipal Council,18798.0,4.7,2.8,100.0,100.0,"Composting, Vermi composting, Biomethanation",23,59.57446808510638
+Ashta Municipal Council,37105.0,7.7,6.6,100.0,100.0,Composting,23,85.71428571428571
+Gadhinglaj Municipal Council,35884.0,13.2,6.875,100.0,100.0,Composting,23,52.083333333333336
+Hupari Municipal Council,28953.0,5.8311,5.4681,100.0,100.0,Composting,23,93.77475947934352
+Jat Municipal Council,35336.0,14.3,13.2,100.0,100.0,Composting,23,92.3076923076923
+Kagal Municipal Council,42124.0,15.4,14.85,100.0,100.0,"Vermi composting, Waste to Energy",24,96.42857142857142
+Khed Municipal Council,16892.0,8.8,8.69,100.0,100.0,"Composting, Bio- methanation",24,98.74999999999999
+Kurundwad Municipal Council,25000.0,5.423,5.423,100.0,100.0,Composting,24,100.0
+Malkapur Municipal Council,5500.0,1.485,1.485,100.0,100.0,"Composting, Refuse Derived Fuel",24,100.0
+Murgud Municipal Council,12311.0,3.1746,3.0646,0.0,97.02,Composting,24,96.53499653499654
+Palus Municipal Council,30010.0,4.95,3.85,100.0,96.22,Composting,24,77.77777777777779
+Panhala Municipal Council,3278.0,1.1,1.1,100.0,100.0,"Composting, Vermi composting",24,100.0
+Rajapur Municipal Council,9841.0,3.905,3.905,100.0,100.0,Composting,24,100.0
+Sawantvadi Municipal Council,23851.0,12.1,12.1,100.0,100.0,"Composting, Vermi composting",24,100.0
+Shirol Municipal Council,27649.0,8.0135,8.0135,100.0,100.0,Vermi composting,24,100.0
+Tasgaon Municipal Council,37945.0,15.466,15.466,85.0,100.0,Composting,24,100.0
+Vadgaon Municipal Council,25651.0,7.15,6.27,100.0,100.0,Composting,24,87.69230769230768
+Vengurla Municipal Council,12392.0,3.3,3.3,100.0,100.0,"Composting, Vermi composting, Bio- methanation, Co- processing",25,100.0
+Ajara Nagarpanchayat,18100.0,5.5,5.5,100.0,100.0,Composting,25,100.0
+Atpadi,26250.0,7.7,6.6,50.0,100.0,Composting,25,85.71428571428571
+Chandgad Nagarpanchayat,10205.0,4.07,4.18,100.0,100.0,Composting,25,102.7027027027027
+Hatkanangale Nagarpanchayat,13679.0,4.4,4.4,100.0,100.0,Composting,25,100.0
+Kadegaon Nagar Panchayat,15335.0,4.7366,4.3967,100.0,100.0,Composting,25,92.82396655829076
+Kankavli Municipal Council,16398.0,5.5,5.5,100.0,100.0,Composting,25,100.0
+Kavathemahankal Nagar Panchayat,24410.0,6.71,6.4812,100.0,100.0,Composting,25,96.59016393442623
+Khanapur Nagar Panchayat,6457.0,1.65,1.54,100.0,100.0,Composting,25,93.33333333333334
+Kudal Nagar Panchayat,19474.0,4.29,4.29,100.0,100.0,Composting,25,100.0
+Lanja Nagar Panchayat,22106.0,6.05,6.05,100.0,100.0,Composting,25,100.0
+Mandangad Nagar Panchayat,4892.0,1.65,1.65,90.0,100.0,-,26,100.0
+Shirala Nagar Panchayat,20000.0,4.968,4.968,100.0,99.65,Composting,26,100.0
+Dapoli Municipal Council,15713.0,7.0,7.0,100.0,100.0,Bio-methanation,26,100.0
+Guhagar Nagar Panchayat,7299.0,0.6,0.42,100.0,100.0,Composting,26,70.0
+Devrukh Nagar Panchayat,13608.0,2.8,2.7,100.0,100.0,Composting,26,96.42857142857144
+Devgadjamsande Nagar Panchayat,17234.0,2.0,2.0,80.0,100.0,Vermi composting,26,100.0
+Vaibhavwadi Nagar Panchayat,2297.0,0.84,0.84,90.0,100.0,Composting,26,100.0
+Kasai-Dodamarg Nagar Panchayat,3811.0,1.89,1.89,100.0,100.0,Composting,26,100.0
+Akola Municipal Corporation,590591.0,193.6,193.6,80.0,99.43,"Composting, Bio- methanation",27,100.0
+Amravati Municipal Corporation,825000.0,220.0,220.0,75.0,100.0,"Composting, Vermi composting, Bio- methanation, Refuse Derived Fuel, Waste to Energy",27,100.0
+Achalpur Municipal Council,112311.0,37.4,34.1,95.0,100.0,Composting,27,91.1764705882353
+Akot Municipal Council,92637.0,27.5,27.5,85.0,100.0,Composting,27,100.0
+Anjangaon Surji Municipal Council,64121.0,18.37,16.72,60.0,100.0,"Composting, Bio- methanation",27,91.01796407185627
+Balapur Municipal Council,44594.0,12.1,11.0,60.0,100.0,Composting,27,90.90909090909092
+Buldhana Municipal Council,74983.0,25.212,23.947,96.7,100.0,Composting,27,94.9825479930192
+Chikhli Municipal Council,57889.0,16.5,7.7,70.0,100.0,Composting,27,46.666666666666664
+Karanja Municipal Council,87206.0,20.35,6.6,0.0,100.0,Composting,27,32.43243243243243
+Khamgaon Municipal Council,94191.0,35.431,17.666,92.0,99.35,Composting,27,49.86029183483391
+Malkapur - Buldhana Municipal Council,67740.0,19.8,0.0,95.0,100.0,"Composting, Vermi composting",28,0.0
+Mehkar Municipal Council,45248.0,11.55,11.0,80.0,100.0,Composting,28,95.23809523809523
+Murtizapur Municipal Council,40295.0,11.0,9.9,80.0,100.0,"Composting, Vermi composting",28,90.0
+Nandura Municipal Council,57043.0,13.728,12.595,70.0,100.0,"Composting, Vermi composting",28,91.74679487179488
+Shegaon Municipal Council,80372.0,21.45,20.79,90.0,100.0,"Composting, Waste to Energy",28,96.92307692307692
+Warud Municipal Council,45482.0,23.21,23.1,100.0,100.0,-,28,99.5260663507109
+Washim Municipal Council,90617.0,26.4,13.2,100.0,100.0,Composting,28,50.0
+ChandurBazaar Municipal Council,20225.0,13.2,11.0,95.0,100.0,Composting,28,83.33333333333334
+ChandurRailway Municipal Council,19776.0,4.818,4.818,100.0,100.0,"Composting, Vermi composting, Co- processing",28,100.0
+Chikhaldara Hill Station Municipal Council,5158.0,2.2,1.1,100.0,100.0,"Composting, Vermi composting",29,50.0
+Daryapur Municipal Council,46772.0,15.84,15.84,100.0,78.75,Composting,29,100.0
+Deulgaon Raja Municipal Council,30827.0,7.7,7.579,80.0,100.0,Composting,29,98.42857142857142
+Dhamangaon Municipal Council,27044.0,5.9466,5.9466,100.0,100.0,Vermi composting,29,100.0
+Jalgaon Jamod Municipal Council,32296.0,8.327,4.994,80.0,100.0,Composting,29,59.97357992073976
+Lonar Municipal Council,26500.0,7.139,6.6,95.0,100.0,Composting,29,92.44992295839752
+Mangrulpir Municipal Council,30983.0,11.0,6.6,60.0,100.0,Composting,29,60.0
+Morshi Municipal Council,37333.0,9.9,9.9,95.0,100.0,"Composting, Vermi composting",29,100.0
+Patur Municipal Council,24654.0,4.4066,4.389,99.0,49.93,Vermi composting,29,99.60059910134798
+Risod Municipal Council,34136.0,12.65,12.1,100.0,100.0,"Composting, Vermi composting",29,95.65217391304347
+Shendurjana Ghat Municipal Council,21748.0,5.522,5.522,100.0,100.0,Composting,29,100.0
+Sindkhed Raja Municipal Council,16434.0,4.488,2.75,0.0,98.04,"Composting, Vermi composting",29,61.27450980392156
+Telhara Municipal Council,24518.0,3.091,3.091,100.0,100.0,Composting,30,100.0
+Barshitakli Nagar Panchayat,21817.0,5.5,1.1,70.0,100.0,"Composting, Vermi composting, Bio- methanation, Waste to Energy",30,20.0
+Bhatkuli Nagar Panchayat,8816.0,8.8,5.5,100.0,100.0,Composting,30,62.5
+Dharni Nagar Panchayat,18761.0,5.83,3.3,100.0,90.0,Composting,30,56.60377358490566
+Malegaon Jahanjir,21290.0,4.4,2.2,100.0,100.0,"Composting, Vermi composting",30,50.0
+Manora Nagar Panchayat,9339.0,3.3,3.3,0.0,100.0,Composting,30,100.0
+Motala Nagar panchyat,10331.0,4.4,1.1,55.0,100.0,Vermi composting,30,25.0
+Nandgaon (K) Nagar Panchyat,13572.0,2.75,1.43,70.0,100.0,Composting,30,52.0
+Sangrampur Nagar Panchayat,11500.0,2.75,2.75,80.0,100.0,Composting,30,100.0
+Teosa Nagar Panchayat,12482.0,3.355,3.3,99.0,99.02,Composting,30,98.36065573770492
+Chandrapur City Municipal Corporation,406789.0,138.6,138.38,100.0,100.0,"Composting, Vermi composting, Bio- methanation",31,99.84126984126985
+Yavatmal Municipal Council,248939.0,93.5,66.0,100.0,100.0,"Composting, Vermi composting",31,70.58823529411765
+Ballarpur Municipal Council,89452.0,28.6,28.6,100.0,100.0,"Composting, Bio- methanation",31,100.0
+Bhadravati Municipal Council,60565.0,14.3,14.256,100.0,100.0,"Composting, Vermi composting",31,99.6923076923077
+Digras Municipal Council,48937.0,14.3,7.7,90.0,100.0,"Composting, Vermi composting",31,53.84615384615385
+Gadchiroli Municipal Council,54152.0,15.4,14.3,100.0,100.0,"Composting, Vermi composting",31,92.85714285714286
+Pusad Municipal Council,73046.0,28.05,26.84,100.0,100.0,Composting,31,95.68627450980391
+Umarkhed Municipal Council,47458.0,16.5,15.4,100.0,100.0,Composting,31,93.33333333333333
+Wani Municipal Council,58840.0,13.2,11.0,0.0,100.0,Composting,31,83.33333333333334
+Warora Municipal Council,46532.0,15.62,15.62,100.0,100.0,Composting,31,100.0
+Arni Municipal Council,31597.0,3.96,0.055,80.0,0.0,Composting,32,1.388888888888889
+Bramhapuri Municipal Council,36025.0,11.44,11.44,100.0,100.0,"Composting, Vermi composting",32,100.0
+Chimur Municipal Council,25741.0,7.524,7.502,80.0,100.0,Composting,32,99.70760233918128
+Darwha Municipal Council,37503.0,8.305,8.25,100.0,100.0,Composting,32,99.33774834437087
+Desaiganj (Wadsa) Municipal Council,35757.0,7.084,7.073,100.0,100.0,Composting,32,99.84472049689442
+Gadchandur Municipal Council,26755.0,9.9,9.9,100.0,100.0,Composting,32,100.0
+Ghatanji Municipal Council,24598.0,7.139,7.139,100.0,100.0,"Composting, Vermi composting",32,100.0
+Ghugghus Municipal Council,41934.0,8.745,0.0,60.0,100.0,Composting,32,0.0
+Mool Municipal Council,28803.0,7.7,7.7,100.0,100.0,Composting,32,100.0
+Nagbhid Municipal Council,25167.0,8.8,8.8,100.0,100.0,Composting,32,100.0
+Ner Nababpur Nagar Parishad,35947.0,8.47,4.84,100.0,100.0,Composting,32,57.14285714285714
+Pandharkawada Municipal Council,35106.0,8.91,8.91,90.0,100.0,"Composting, Vermi composting",32,100.0
+Rajura Municipal Council,29668.0,8.25,7.7,95.0,100.0,"Composting, Co- processing",33,93.33333333333333
+Ahiri Nagar Panchayat,16647.0,4.84,4.84,100.0,100.0,Vermi composting,33,100.0
+Armori Nagar Panchayat,25507.0,6.6,6.6,100.0,100.0,Composting,33,100.0
+Babhulgaon Nagarpanchayat,6157.0,1.617,0.88,100.0,100.0,Composting,33,54.421768707483
+Bhamragad Nagar Panchayat,11530.0,2.211,2.211,100.0,100.0,Composting,33,100.0
+Bhishi,12520.0,3.85,3.795,90.0,100.0,Composting,33,98.57142857142857
+Chamoshi Nagar Panchayat,16953.0,4.961,4.961,90.0,99.78,Composting,33,100.0
+Dhanaki Nagarpanchayat,20400.0,7.37,7.7,100.0,100.0,Composting,33,104.4776119402985
+Dhanora Nagar Panchayat,6109.0,2.2,0.0,100.0,100.0,Composting,33,0.0
+Gondpimpri Nagar Panchayat,8474.0,2.464,2.464,100.0,100.0,Composting,33,100.0
+Jiwati Nagar Panchayat,6643.0,1.65,0.88,95.0,100.0,Vermi composting,33,53.333333333333336
+Kalamb Nagar Panchyat,20525.0,4.4,2.64,80.0,100.0,Composting,33,60.0
+Korchi Nagar Panchayat,3483.0,0.957,0.957,100.0,100.0,Composting,33,100.0
+Korpana Nagar Panchayat,5195.0,2.0911,2.09,100.0,100.0,Composting,34,99.94739610731193
+Kurkheda Nagar Panchayat,7430.0,2.2,2.2,0.0,100.0,"Composting, Vermi composting",34,100.0
+Mahagaon Nagar Panchayat,8248.0,2.75,0.22,0.0,100.0,Vermi composting,34,8.0
+Maregaon Nagar Panchyat,8553.0,1.65,1.65,100.0,100.0,Vermi composting,34,100.0
+Mulchera Nagar Panchayat,1939.0,0.55,0.55,90.0,100.0,Composting,34,100.0
+Pombhurna Nagar Panchayat,6308.0,1.408,0.0,100.0,100.0,-,34,0.0
+Ralegaon Nagar Panchayat,15631.0,4.4,1.1,100.0,100.0,Composting,34,25.0
+Saoli Nagar panchayat,10019.0,2.717,1.617,90.0,100.0,"Composting, Vermi composting",34,59.51417004048582
+Sindewahi Nagar Panchayat,18182.0,3.685,1.309,80.0,100.0,Composting,34,35.52238805970149
+Sironcha Nagar Panchayat,10621.0,2.2,2.2,100.0,100.0,Composting,34,100.0
+Zari Jamni Nagar Panchayat,3077.0,0.11,0.022,90.0,100.0,Composting,34,20.0
+Etapalli Nagar Panchayat,10158.0,2.394,2.394,100.0,100.0,"Composting, Vermi composting",34,100.0
+Pune Municipal Corporation,4567666.0,2530.0,2200.0,95.0,100.0,"Composting, Bio- methanation, Refuse Derived Fuel, Waste to Energy",35,86.95652173913044
+Pimpri-Chinchwad Municipal Corporation,2966109.0,1276.05,1168.0,100.0,100.0,"Composting, Biomethanation, Waste to Energy",35,91.53246346146311
+Solapur Municipal Corporation,951558.0,297.0,264.0,100.0,100.0,"Composting, Waste to Energy",35,88.88888888888889
+Baramati Municipal Council,145173.0,30.8,30.03,100.0,100.0,"Composting, Vermi composting, Bio- methanation",35,97.5
+Barshi Municipal Council,118722.0,44.0,42.35,100.0,100.0,Composting,35,96.25
+Satara Municipal Council,231885.0,60.5,60.5,100.0,100.0,Composting,35,100.0
+Akkalkot Municipal Council,40103.0,15.125,13.607,80.0,100.0,Composting,35,89.96363636363635
+Akluj,65000.0,17.666,17.666,100.0,100.0,Composting,35,100.0
+Daund Municipal Council,69000.0,18.7,17.6,100.0,100.0,Composting,35,94.11764705882354
+Karad Municipal Council,86000.0,14.3,14.025,100.0,100.0,"Composting, Bio- methanation, Waste to Energy",36,98.07692307692307
+Lonavala Municipal Council,57698.0,44.0,42.9,100.0,100.0,"Composting, Bio- methanation",36,97.5
+Pandharpur Municipal Council,115000.0,55.0,55.0,100.0,100.0,Composting,36,100.0
+Phaltan Municipal Council,52118.0,17.82,16.148,100.0,100.0,Composting,36,90.61728395061728
+Talegaon Dhabade Municipal Council,72739.0,23.1,22.0,100.0,100.0,Composting,36,95.23809523809523
+Alandi Municipal Council,33000.0,16.5,16.5,95.0,100.0,Composting,36,100.0
+Bhor Municipal Council,24800.0,5.2371,5.0061,98.0,100.0,Composting,36,95.58916194076875
+Chakan Municipal Council,63906.0,27.0633,27.0633,100.0,100.0,Composting,36,100.0
+Dudhani Municipal Council,11214.0,3.3,2.75,100.0,100.0,Composting,36,83.33333333333334
+Indapur Municipal Council,25515.0,9.9033,9.7053,100.0,100.0,Composting,36,98.00066644451849
+Jejuri Municipal Council,20960.0,7.865,7.788,100.0,100.0,Composting,36,99.02097902097901
+Junnar Municipal Council,25315.0,6.6,6.6,100.0,100.0,Composting,37,100.0
+Karmala Municipal Council,23199.0,4.4,4.4,100.0,100.0,Composting,37,100.0
+Kurduvadi Municipal Council,22463.0,5.61,5.335,100.0,100.0,Composting,37,95.09803921568627
+Mahabaleshwar Municipal Council,13393.0,7.7,7.7,100.0,100.0,Composting,37,100.0
+Maindargi Municipal Council,12363.0,4.202,3.3,0.0,100.0,Composting,37,78.53403141361255
+Mangalwedha Municipal Council,21824.0,5.72,5.445,100.0,100.0,Composting,37,95.1923076923077
+Mhaswad Municipal Council,28546.0,4.73,4.4,100.0,100.0,Vermi composting,37,93.02325581395348
+Mohol Nagar Panchayat,27833.0,7.7,7.15,100.0,100.0,Composting,37,92.85714285714286
+Panchgani Municipal Council,14894.0,7.7,7.7,100.0,100.0,Composting,37,100.0
+Rahimatpur Municipal Council,17633.0,2.75,1.1,100.0,80.0,"Composting, Vermi composting",37,40.0
+Rajgurunagar Municipal Council,28592.0,16.5,16.5,100.0,100.0,Composting,37,100.0
+Sangola Municipal Council,34321.0,10.054,10.054,100.0,100.0,Composting,37,100.0
+Saswad Municipal Council,40000.0,14.971,14.971,100.0,100.0,Composting,38,100.0
+Shirur Municipal Council,40080.0,16.5,16.5,100.0,100.0,"Composting, Co- processing",38,100.0
+Wai Municipal Council,44955.0,15.4,14.3,90.0,100.0,Composting,38,92.85714285714286
+Angar,18755.0,5.775,0.0,100.0,100.0,Composting,38,0.0
+Dahivadi Nagar Panchayat,18064.0,4.95,4.95,100.0,100.0,Composting,38,100.0
+Dehu,35000.0,11.44,11.44,100.0,100.0,Composting,38,100.0
+Khandala Nagar Panchayat,10000.0,2.981,2.981,100.0,100.0,Composting,38,100.0
+Koregaon Nagar Panchayat,23944.0,8.8,5.5,100.0,100.0,Composting,38,62.5
+Lonand Nagar Panchayat,22650.0,5.72,3.41,100.0,100.0,Composting,38,59.61538461538463
+Madha Nagar Panchayat,11027.0,4.4,4.4,100.0,100.0,Composting,38,100.0
+Mahalung Shripur,25113.0,6.6,0.0,100.0,100.0,Vermi composting,38,0.0
+Malegaon,21284.0,8.25,8.25,100.0,100.0,Composting,38,100.0
+Malkapur Municipal Council (Nagar Panchayet),45000.0,7.7,6.6,100.0,100.0,"Composting, Bio- methanation",39,85.71428571428571
+Malshiras Nagar Panchayat,21985.0,5.5,3.3,80.0,52.43,"Composting, Vermi composting, Bio- methanation, Waste to Energy",39,60.0
+Manchar,21841.0,8.8,8.8,90.0,100.0,"Composting, Co- processing",39,100.0
+Medha Nagar Panchayat,4678.0,1.65,1.43,100.0,100.0,Composting,39,86.66666666666667
+Natepute,17930.0,5.5,5.5,100.0,100.0,Composting,39,100.0
+Patan Nagar Panchayat,17673.0,6.6,5.5,100.0,100.0,Composting,39,83.33333333333334
+Vadgaon Nagarpanchayat,25000.0,5.72,5.17,100.0,100.0,Composting,39,90.38461538461539
+Vaduj Nagar Panchayat,17636.0,4.84,4.73,100.0,100.0,Composting,39,97.72727272727273
+Vairag,26500.0,6.6,0.0,70.0,100.0,"Composting, Vermi composting",39,0.0
+Nagpur Municipal Corporation,2750500.0,1286.0,200.0,70.0,100.0,Composting,40,15.552099533437014
+Gondia Municipal Council,170558.0,58.7785,58.7785,100.0,100.0,"Composting, Vermi composting",40,100.0
+Hingan Ghat Municipal Council,101805.0,35.2,22.0,90.0,96.88,Composting,40,62.5
+Wardha Municipal Council,106444.0,33.0,14.3,100.0,100.0,Composting,40,43.333333333333336
+Arvi Municipal Council,54992.0,12.991,12.991,100.0,100.0,Composting,40,100.0
+Bhandara Municipal Council,91845.0,33.55,33.55,100.0,100.0,Composting,40,100.0
+Kamptee Municipal Council,86793.0,31.911,31.911,100.0,100.0,Composting,40,100.0
+Katol Municipal Council,43267.0,13.2,8.58,100.0,65.0,Composting,40,65.0
+Tumsar Municipal Council,44869.0,16.5,7.7,100.0,100.0,Composting,40,46.666666666666664
+Umred Municipal Council,53971.0,19.525,19.525,100.0,100.0,"Composting, Vermi composting",40,100.0
+Wadi Municipal Council,54048.0,14.41,14.41,100.0,100.0,Composting,41,100.0
+Amgaon Nagar Panchayat,34564.0,6.05,3.08,80.0,100.0,Composting,41,50.909090909090914
+Deoli Municipal Council,19288.0,5.5055,5.5055,100.0,100.0,"Composting, Vermi composting",41,100.0
+Kalmeshwar Municipal Council,20500.0,6.49,6.49,100.0,100.0,"Composting, Co- processing",41,100.0
+Kanhann Pimpari Municipal Council,27851.0,5.5,5.5,50.0,100.0,Composting,41,100.0
+Khapa Municipal Council,14659.0,3.85,3.74,98.0,100.0,"Composting, Vermi composting",41,97.14285714285714
+Mohapa Municipal Council,6987.0,1.936,1.848,99.0,97.16,"Composting, Vermi composting",41,95.45454545454545
+Mowad Municipal Council,9120.0,2.563,2.42,100.0,100.0,"Composting, Vermi composting",41,94.42060085836908
+Municipal Council Butibor,45026.0,13.2,13.2,100.0,100.0,Composting,41,100.0
+Narkhed Municipal Council,21378.0,7.15,7.04,90.0,100.0,Composting,41,98.46153846153845
+Pavani Municipal Council,22821.0,6.6,4.4,100.0,100.0,Composting,41,66.66666666666667
+Pulgaon Municipal Council,33924.0,11.0,11.0,100.0,100.0,Composting,41,100.0
+Ramtek Municipal Council,22300.0,6.6,5.5,0.0,100.0,Composting,42,83.33333333333334
+Sakoli Nagar Panchayat,29654.0,6.93,4.4,100.0,95.24,"Composting, Vermi composting",42,63.4920634920635
+Savner Municipal Council,40000.0,6.8684,6.6,85.0,100.0,"Composting, Vermi composting",42,96.09224855861626
+Sindi Municipal Council,12858.0,4.4,4.4,95.0,100.0,Composting,42,100.0
+Tirora Municipal Council,32337.0,6.82,6.05,100.0,100.0,Vermi composting,42,88.70967741935483
+Wanadongari Nagar Panchayat,58699.0,11.605,11.605,100.0,100.0,Composting,42,100.0
+Arjuni Nagar Panchayat,9472.0,2.97,2.75,100.0,100.0,Composting,42,92.59259259259258
+Ashti Nagar Panchayat,11716.0,4.07,3.3,95.0,100.0,Composting,42,81.08108108108108
+Bhiwapur Nagar Panchayat,14268.0,3.311,3.311,100.0,100.0,"Composting, Vermi composting",42,100.0
+Deori Nagar Panchayat,14579.0,5.83,5.83,95.0,100.0,Composting,42,100.0
+Goregaon Nagar Panchayat,8766.0,1.606,1.606,80.0,100.0,Composting,42,100.0
+Hingana Nagar Panchayat,10000.0,2.42,2.42,0.0,100.0,Composting,42,100.0
+Karanja Nagar Panchayat,12862.0,4.4,4.4,100.0,100.0,Composting,42,100.0
+Lakhandur Nagar Panchayat,9795.0,3.63,1.804,100.0,100.0,Vermi composting,43,49.6969696969697
+Lakhani Nagar Panchayat,12636.0,3.3,3.3,100.0,100.0,Composting,43,100.0
+Mahadula Municipal Council,24019.0,5.4582,5.3482,97.0,100.0,Composting,43,97.98468359532447
+Mouda Municipal Council,14606.0,4.4,4.4,100.0,100.0,Composting,43,100.0
+Sadak-Arjuni Nagar Panchayat,5975.0,1.65,0.99,0.0,100.0,Composting,43,60.0
+Salekasa Nagar Panchayat,8887.0,0.77088,0.0,75.0,100.0,-,43,0.0
+Samudrapur Nagar Panchayat,7656.0,2.2,2.2,100.0,100.0,Composting,43,100.0
+Selu Nagar Panchayat,13740.0,4.015,3.96,100.0,95.89,Composting,43,98.63013698630138
+Kuhi Nagar Panchayat,10436.0,3.0,3.0,100.0,100.0,"Composting, Vermi composting",43,100.0
+Parshiwani Nagar Panchayat,12026.0,3.0,3.0,100.0,100.0,Composting,43,100.0
+Mohadi Nagar Panchayat,10527.0,3.15,3.15,17.0,100.0,Composting,43,100.0
+Nashik Municipal Corporation,2428945.0,825.0,660.0,85.0,100.0,"Composting, Bio- methanation, Refuse Derived Fuel",44,80.0
+Ahmednagar Municipal Corporation,420000.0,159.5,148.5,100.0,100.0,"Composting, Bio- methanation",44,93.10344827586206
+Dhule Municipal Corporation,493385.0,125.466,125.466,100.0,100.0,"Composting, Vermi composting",44,100.0
+Jalgaon City Municipal Corporation,517494.0,308.0,184.8,80.0,100.0,Composting,44,60.00000000000001
+Malegaon Municipal Corporation,590998.0,264.0,165.0,80.0,100.0,"Composting, Vermi composting",44,62.5
+Bhusawal Municipal Council,200000.0,74.8,61.6,90.0,100.0,Composting,44,82.3529411764706
+Nandurbar Municipal Council,111067.0,46.2,46.2,100.0,71.55,Composting,44,100.0
+Amalner Municipal Council,95994.0,39.6,37.62,100.0,100.0,Composting,44,95.0
+Chalisgaon Municipal Council,97551.0,40.7,37.4,80.0,100.0,Composting,45,91.89189189189189
+Chopda Municipal Council,72783.0,15.4,15.29,100.0,100.0,Composting,45,99.28571428571428
+Dondaicha-Varwade Municipal Council,46767.0,16.5,16.5,95.0,100.0,Composting,45,100.0
+Jamner Municipal Council,46762.0,15.411,15.411,100.0,100.0,Composting,45,100.0
+Kopargaon Municipal Council,65273.0,22.0,20.9,0.0,100.0,"Composting, Refuse Derived Fuel",45,95.0
+Manmad Municipal Council,80058.0,22.0,20.9,100.0,100.0,Composting,45,95.0
+Ozar,54069.0,8.8,4.4,85.0,100.0,Bio-methanation,45,50.0
+Pachora Municipal Council,59609.0,23.1,23.1,100.0,100.0,Composting,45,100.0
+Sangamner Municipal Council,65804.0,27.643,27.643,100.0,100.0,"Composting, Bio- methanation, Waste to Energy",45,100.0
+Shahada Municipal Council,68000.0,12.1,12.1,100.0,100.0,Composting,45,100.0
+Shirpur-Varwade Municipal Council,76905.0,14.3,14.3,96.0,100.0,"Composting, Vermi composting",45,100.0
+Shrirampur Municipal Council,104220.0,33.44,33.44,100.0,100.0,Composting,46,100.0
+Sinnar Municipal Council,80000.0,24.2,24.2,90.0,100.0,Composting,46,100.0
+Yeola Municipal Council,49826.0,18.381,16.39,0.0,100.0,Composting,46,89.16816277678036
+Pathardi Municipal Council,27311.0,9.095,8.988,100.0,100.0,Composting,46,98.8235294117647
+Rahata Pimplas Municipal Council,22435.0,7.2011,1.07,100.0,100.0,Composting,46,14.85884101040119
+Bhagur Municipal Council,12453.0,2.7392,2.7392,95.0,100.0,Composting,46,100.0
+Bhadgaon Municipal Council,37214.0,12.111,12.111,100.0,100.0,Composting,46,100.0
+Chandwad Municipal Council,33450.0,7.7,7.7,100.0,100.0,Composting,46,100.0
+Devlali Pravara Municipal Council,30997.0,6.6,6.6,100.0,100.0,Composting,46,100.0
+Dharangaon Municipal Council,37375.0,5.5,5.5,100.0,100.0,Composting,46,100.0
+Erandol Municipal Council,37526.0,5.94,5.94,100.0,100.0,Composting,46,100.0
+Faizpur Municipal Council,26602.0,7.7,7.7,100.0,100.0,Composting,46,100.0
+Igatpuri Municipal Council,30989.0,9.35,9.218,99.0,100.0,Composting,47,98.58823529411765
+Jamkhed Municipal Council,45000.0,17.6,16.5,100.0,100.0,Composting,47,93.74999999999999
+Nandgaon Municipal Council,23604.0,4.125,2.442,95.0,100.0,Composting,47,59.20000000000001
+Nashirabad Municipal Council,26131.0,8.25,4.4,0.0,100.0,Composting,47,53.333333333333336
+Navapur Municipal Council,36500.0,8.8,8.25,75.0,100.0,Composting,47,93.74999999999999
+Parola Municipal Council,48371.0,13.2,12.1,100.0,100.0,Composting,47,91.66666666666667
+Rahuri Municipal Council,38813.0,14.3,13.75,100.0,100.0,Composting,47,96.15384615384615
+Raver Municipal Council,39533.0,8.8,8.25,100.0,100.0,Composting,47,93.74999999999999
+Satana Municipal Council,37701.0,8.8,8.8,100.0,100.0,"Composting, Bio- methanation",47,100.0
+Savda Municipal Council,21500.0,7.7,7.469,100.0,100.0,Composting,47,97.0
+Shevgaon Municipal Council,44375.0,12.364,12.21,100.0,100.0,Composting,47,98.75444839857651
+Srigonda Municipal Council,31134.0,10.67,9.9,100.0,100.0,Composting,47,92.78350515463917
+Taloda Municipal Council,28954.0,8.8,8.8,100.0,100.0,Composting,48,100.0
+Trimbak Municipal Council,15545.0,6.6,3.3,100.0,83.33,Composting,48,50.0
+Varangaon Municipal Council,31565.0,12.1,12.1,100.0,100.0,Composting,48,100.0
+Yawal Municipal Council,48000.0,11.22,11.22,100.0,100.0,Composting,48,100.0
+Akole Nagar Panchayat,19814.0,4.62,4.62,95.0,95.24,Composting,48,100.0
+Bodvad Nagar Panchayat,31500.0,6.6,0.44,100.0,100.0,Composting,48,6.666666666666667
+Devala Nagar Panchayat,12049.0,5.5,5.5,100.0,100.0,Composting,48,100.0
+Dhadgaon Wadphalya-Roshmal Bu Nagar Panchayat,11908.0,5.5,0.22,100.0,7.0,Composting,48,4.0
+Dindori Nagar Panchayat,17734.0,6.138,3.68071,100.0,100.0,Composting,48,59.96594982078853
+Kalawan Nagar Panchayat,20541.0,7.7,1.1,0.0,100.0,Composting,48,14.285714285714288
+Karjat Nagar Panchayat,20050.0,5.5,2.2,100.0,100.0,Composting,48,40.0
+Muktainagar Nagarpanchayat,22798.0,9.9,6.6,0.0,100.0,Composting,49,66.66666666666666
+Nevasa Nagar Panchayat,22618.0,5.39,5.39,100.0,100.0,Composting,49,100.0
+Niphad Nagar Panchayat,26000.0,6.6,4.4,100.0,100.0,"Composting, Co- processing",49,66.66666666666667
+Parner Nagar Panchayat,13119.0,5.5,5.5,100.0,100.0,Composting,49,100.0
+Peth Nagar Panchayat,6858.0,2.2,2.2,100.0,100.0,Composting,49,100.0
+Sakri Nagar Panchayat,26000.0,5.5,5.5,100.0,100.0,Composting,49,100.0
+Shendurni Nagarpanchayat,35010.0,4.4,0.088,100.0,100.0,Composting,49,1.9999999999999998
+Sindkheda Municipal Council,24566.0,3.3,0.0,70.0,100.0,Composting,49,0.0
+Surgana Nagar Panchayat,6144.0,2.2,2.2,0.0,100.0,Composting,49,100.0
+Shirdi Nagar Panchayat,36004.0,15.75,15.75,100.0,100.0,Composting,49,100.0
+Chh. Sambhajinagar Municipal Corporation,1228532.0,495.0,440.0,90.0,100.0,"Composting, Biomethanation",50,88.88888888888889
+Nanded-Waghala Municipal Corporation,550839.0,275.0,151.8,0.0,100.0,"Composting, Biomethanation",50,55.2
+Latur City Municipal Corporation,382940.0,187.0,163.9,95.0,88.24,"Composting, Vermi composting",50,87.6470588235294
+Parbhani Municipal Corporation,356759.0,148.5,148.5,100.0,100.0,"Composting, Bio- methanation, Refuse Derived Fuel",50,100.0
+Beed Municipal Council,255000.0,40.7,38.5,0.0,100.0,Composting,50,94.59459459459458
+Jalna M. Council,334197.0,126.5,117.7,30.0,82.61,"Composting, Bio- methanation",50,93.04347826086958
+Udgir Municipal Council,120669.0,26.0,26.0,100.0,100.0,Composting,50,100.0
+Osmanabad Municipal Council,112175.0,60.0,30.0,40.0,100.0,Composting,50,50.0
+Paithan Municipal Council,41736.0,7.597,6.4093,100.0,95.24,Composting,51,84.36619718309859
+Kannad Municipal Council,40959.0,8.56,3.21,100.0,100.0,Composting,51,37.5
+Vaijapur Municipal Council,48200.0,5.885,5.885,100.0,90.91,Composting,51,100.0
+Ahmedpur Municipal Council,43936.0,14.3,9.9,95.0,100.0,Composting,51,69.23076923076923
+Ambejogai Municipal Council,73975.0,17.93,15.4,100.0,100.0,"Composting, Vermi composting, Bio- methanation",51,85.88957055214725
+Basmat Municipal Council,68846.0,30.8,18.7,100.0,100.0,"Composting, Vermi composting",51,60.71428571428571
+Deglur Municipal Council,54493.0,11.308,11.308,100.0,100.0,Composting,51,100.0
+Gangakhed Municipal Council,49891.0,16.5,16.5,100.0,100.0,"Composting, Vermi composting",51,100.0
+Hingoli Municipal Council,93076.0,24.2,23.1,100.0,100.0,Vermi composting,51,95.45454545454545
+Jintur Municipal Council,44291.0,13.2,12.1,90.0,100.0,Composting,51,91.66666666666667
+Majalgaon Municipal Council,49453.0,17.6,12.1,96.0,100.0,Composting,51,68.74999999999999
+Parli Vaijinath Municipal Council,90975.0,36.3,23.1,83.0,100.0,"Composting, Vermi composting, Co- processing",52,63.63636363636365
+Sailu Municipal Council,46915.0,15.95,14.3,0.0,100.0,Composting,52,89.65517241379311
+Sillod Municipal Council,58230.0,9.9,8.8,99.0,100.0,Composting,52,88.8888888888889
+Ambad Municipal Council,40531.0,7.7,5.5,100.0,100.0,"Composting, Vermi composting",52,71.42857142857143
+Ausa Municipal Council,36118.0,12.1,12.1,100.0,100.0,Composting,52,100.0
+Bhokar Municipal Council,41000.0,8.8,7.7,90.0,87.5,Composting,52,87.5
+Bhokardhan Municipal Council,30000.0,4.95,4.499,100.0,100.0,Composting,52,90.88888888888887
+Bhoom Municipal Council,22077.0,4.95,3.08,100.0,100.0,Composting,52,62.22222222222222
+Dharmabad Municipal Council,39000.0,12.672,11.22,80.0,100.0,Composting,52,88.54166666666666
+dharur municipal council,20507.0,3.3,3.3,0.0,100.0,"Composting, Bio- methanation",52,100.0
+Georai Municipal Council,33562.0,6.6,6.27,85.0,100.0,Composting,52,95.0
+Hadgaon Municipal Council,27433.0,7.7,7.48,90.0,100.0,Vermi composting,52,97.14285714285714
+Kalamb Municipal Council,30527.0,7.7,5.137,100.0,100.0,"Composting, Vermi composting",53,66.71428571428571
+Kalamnuri M. Council,24784.0,8.8,6.6,98.0,100.0,Composting,53,74.99999999999999
+Kandhar Municipal Council,24843.0,6.6,4.4,90.0,100.0,Vermi composting,53,66.66666666666667
+Khuldabad Municipal Council,18000.0,3.52,3.245,98.0,100.0,Composting,53,92.1875
+Loha Municipal Council,24125.0,8.8,7.7,80.0,100.0,Composting,53,87.5
+Manwath Municipal Council,32488.0,9.9,9.9,100.0,100.0,Composting,53,100.0
+Mudkhed Municipal Council,23517.0,3.96,2.53,100.0,100.0,Composting,53,63.888888888888886
+Murum Municipal Council,18371.0,3.3,1.76,0.0,100.0,Composting,53,53.333333333333336
+Naldurg Municipal Council,18341.0,7.15,4.95,100.0,76.92,Composting,53,69.23076923076923
+Nilanga Municipal Council,36172.0,8.8,8.8,0.0,100.0,Composting,53,100.0
+Omerga Municipal Council,54600.0,14.3,11.0,100.0,100.0,"Composting, Co- processing",53,76.92307692307692
+Paranda Municipal Council,18758.0,5.5,4.95,100.0,100.0,Composting,53,90.0
+Partur Municipal Council,46081.0,11.0,9.35,100.0,100.0,Composting,54,85.0
+Pathri Municipal Council,36853.0,3850.0,8.8,80.0,100.0,Composting,54,0.2285714285714286
+Purna Municipal Council,36433.0,13.2,1.1,70.0,83.33,Composting,54,8.333333333333334
+Tuljapur Municipal Council,35403.0,13.2,11.0,100.0,100.0,Composting,54,83.33333333333334
+Umri Municipal Council,13501.0,3.3,1.1,0.33,100.0,Composting,54,33.333333333333336
+Gangapur Municipal Council,27845.0,5.3821,3.21,100.0,100.0,"Composting, Vermi composting",54,59.64214711729622
+Kinwat Municipal Council,28554.0,8.56,5.35,80.0,100.0,"Composting, Vermi composting, Biomethanation, Waste to Energy",54,62.499999999999986
+Kundalwadi Municipal Council,14860.0,4.28214,4.28,96.0,99.95,Composting,54,99.95002498750625
+Biloli Municipal Council,15023.0,4.28,2.14,80.0,100.0,Composting,54,50.0
+Mukhed Municipal Council,27750.0,7.49,4.28,100.0,100.0,"Composting, Vermi composting",54,57.14285714285714
+Sonpeth Municipal Council,15865.0,6.42,6.42,95.0,100.0,Composting,54,100.0
+Ashti Nagar Panchayat (Beed),17400.0,4.0,2.0,100.0,100.0,"Composting, Vermi composting, Biomethanation, Waste to Energy",55,50.0
+Sengaon Nagar Panchayat,9016.0,2.5,2.5,100.0,100.0,Composting,55,100.0
+Soigaon Nagar Panchayat,7360.0,2.1,0.0,100.0,100.0,Composting,55,0.0
+Chakur Nagar Panchayat,19244.0,5.25,5.25,100.0,100.0,Composting,55,100.0
+Jalkot Nagar Panchayat,9756.0,3.15,2.1,80.0,100.0,Vermi composting,55,66.66666666666667
+Himayatnagar Nagar Panchayat,20285.0,6.3,4.2,100.0,100.0,Composting,55,66.66666666666667
+Naigaon Nagarpanchayat,16912.0,4.2,2.1,0.0,636.52,Composting,55,50.0
+Ardhapur Nagar Panchayat,26029.0,11.0,3.85,20.0,100.0,Composting,55,35.0
+Aundha Nagnath Nagar Panchayat,16012.0,5.5,5.5,100.0,100.0,Composting,55,100.0
+Badnapur Nagar Panchayat,11869.0,4.51,4.4,95.0,100.0,Vermi composting,55,97.56097560975611
+Deoni Nagar Panchayat,14800.0,3.96,3.85,100.0,100.0,Composting,55,97.22222222222221
+Ghansawangi Nagar Panchayat,7524.0,3.3,2.2,100.0,100.0,"Composting, Vermi composting",55,66.66666666666667
+Japharabad Nagar Panchayat,15910.0,3.3,3.3,50.0,100.0,Composting,56,100.0
+Keij Nagar Panchayat,30704.0,8.8,5.5,50.0,87.5,Composting,56,62.5
+Lohara Bu Nagar Panchayat,12350.0,4.4,4.4,95.0,100.0,Composting,56,100.0
+Mahur Nagar Panchayat,11164.0,4.4,2.2,100.0,100.0,Vermi composting,56,50.0
+Mantha Nagar Panchayat,26504.0,5.28,3.179,100.0,100.0,Composting,56,60.20833333333333
+Palam Nagar Panchayat,18643.0,5.5,4.4,90.0,100.0,"Composting, Vermi composting, Bio- methanation",56,80.0
+Patoda Nagar Panchayat,16569.0,3.52,3.3,100.0,100.0,Composting,56,93.75
+Phulambri Nagar Panchayat,17192.0,3.3,3.3,100.0,100.0,Composting,56,100.0
+Renapur Nagar Panchayat,19277.0,5.5,3.3,40.0,100.0,Composting,56,60.0
+Shirur Anantpal Nagar Panchayat,11798.0,3.3,2.42,100.0,100.0,Composting,56,73.33333333333334
+Shirur Kasar Nagar Panchayat,5806.0,2.2,1.1,60.0,100.0,Composting,56,50.0
+Tirthpuri,12883.0,1.1,0.0,0.0,70.0,"Composting, Refuse Derived Fuel",56,0.0
+Wadwani Nagar Panchayat,15000.0,4.4,4.4,0.0,100.0,Composting,57,100.0
+Washi Nagar Panchayat,17127.0,5.5,3.3,100.0,100.0,Composting,57,60.0
+CB,8.0,,,100.0,100.0,T4 - 4,57,
+CB,18.61,,,90.0,100.0,T4 - 11,57,
+CB,3.0,,,80.0,100.0,T4 - 4,57,
+CB,6.3,,,90.0,100.0,T4 - 2,57,
+CB,14.7,,,0.0,100.0,T3 - 2,57,

@@ -1,0 +1,14 @@
+{
+  "normalization": "min_max_0_100",
+  "weights": {
+    "air_quality_score": 0.2,
+    "waste_management_score": 0.2,
+    "population_density_score": 0.2,
+    "green_space_score": 0.2,
+    "traffic_pressure_score": 0.2
+  },
+  "problem_thresholds": {
+    "problem_below": 40,
+    "needs_attention_below": 60
+  }
+}

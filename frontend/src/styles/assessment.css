@@ -1,0 +1,243 @@
+/* =========================
+   ASSESSMENT PAGE
+========================= */
+
+.assessment-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Header */
+
+.assessment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 45px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.assessment-header h1 {
+  font-size: 24px;
+  color: #173b2b;
+  margin-bottom: 5px;
+}
+
+.assessment-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.back-button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  color: #374151;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #f3f4f6;
+}
+
+/* Main */
+
+.assessment-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* City Card */
+
+.assessment-city-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.assessment-label {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.assessment-city-card h2 {
+  font-size: 28px;
+  color: #176b45;
+  margin-bottom: 8px;
+}
+
+.assessment-city-card p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.assessment-status {
+  padding: 15px 20px;
+  background: #e8f5ee;
+  border-radius: 9px;
+  text-align: center;
+}
+
+.assessment-status span {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 5px;
+}
+
+.assessment-status strong {
+  color: #176b45;
+}
+
+/* Section */
+
+.assessment-section {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* Indicators */
+
+.indicator-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.indicator-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.indicator-item h3 {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.indicator-item p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.indicator-item span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Dataset Status */
+
+.data-status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.data-status-card h2 {
+  font-size: 18px;
+  color: #173b2b;
+  margin-bottom: 7px;
+}
+
+.data-status-card p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.dataset-badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #fff7ed;
+  color: #c2410c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Run Assessment */
+
+.run-assessment-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 30px;
+  background: #e8f5ee;
+  border: 1px solid #c5e3d2;
+  border-radius: 12px;
+}
+
+.run-assessment-section h2 {
+  font-size: 20px;
+  color: #176b45;
+  margin-bottom: 8px;
+}
+
+.run-assessment-section p {
+  max-width: 750px;
+  color: #496457;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.run-assessment-button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #a7b8af;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: not-allowed;
+  white-space: nowrap;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .assessment-header {
+    padding: 20px;
+  }
+
+  .assessment-content {
+    padding: 20px;
+  }
+
+  .assessment-city-card,
+  .data-status-card,
+  .run-assessment-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .indicator-item {
+    gap: 15px;
+    align-items: flex-start;
+  }
+}

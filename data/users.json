@@ -1,0 +1,32 @@
+[
+  {
+    "id": "usr-ishan-admin",
+    "name": "Ishan Chipate",
+    "email": "ishan.chipate@usas.gov.in",
+    "password_hash": "a4347d561919e0a984fcedc0eaef7eab$1143bed1d7c641952635c97c4fcf8d01f96a556b1066dc67b568e8d8376adfd7",
+    "role": "Administrator",
+    "designation": "Chief Urban Systems Administrator",
+    "department": "Maharashtra State Urban Development Directorate",
+    "employee_id": "MH-UDD-DIR-001",
+    "verification_evidence": "Statutory System Architect & Administrator Order No. UDD/2026/01",
+    "status": "ACTIVE",
+    "must_change_password": true,
+    "created_at": 1772400000,
+    "updated_at": 1793551250
+  },
+  {
+    "id": "usr-5a785f2aa7",
+    "name": "Smt. Neha Patil",
+    "email": "neha.patil@punecorp.gov.in",
+    "password_hash": "04eaa7f406dd4c2efac4bd39ec4de816$44b3df03abb047ead4a20c8a139c615d1231ad0d97cec05851da57dd37832cd2",
+    "role": "Urban Planner",
+    "designation": "Assistant Director of Town Planning",
+    "department": "Pune Municipal Corporation",
+    "employee_id": "MH-PMC-TP-2024-082",
+    "verification_evidence": "Government Resolution UDD/2024/CR-12",
+    "status": "ACTIVE",
+    "must_change_password": false,
+    "created_at": 1793550041,
+    "updated_at": 1793550041
+  }
+]

@@ -1,0 +1,43 @@
+city,station_id,station_name,locality,provider,owner,latitude,longitude,pm25_available,pm10_available,datetime_last,status
+Achalpur,,,,,,,,False,False,,NO_MATCH
+Ahmednagar,3409457.0,"Tarakpur, Ahmednagar - MPCB",,CPCB,Maharashtra Pollution Control Board,19.10122,74.73339,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Akola,3409456.0,"Ramdaspeth, Akola - MPCB",,CPCB,Maharashtra Pollution Control Board,20.719516,77.000253,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Ambernath,6266794.0,"Chinchpada, Ambernath - MPCB",,N/A,OpenAQ admin,19.215784,73.199781,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Amravati,3409458.0,"Shivneri Colony, Amravati - MPCB",,CPCB,Maharashtra Pollution Control Board,20.9402359,77.7895248,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Barshi,,,,,,,,False,False,,NO_MATCH
+Beed,6266792.0,"Bir, Beed - MPCB",,N/A,OpenAQ admin,18.988474,75.753873,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Bhiwandi-Nizampur,,,,,,,,False,False,,NO_MATCH
+Bhusawal,,,,,,,,False,False,,NO_MATCH
+Chandrapur,5565.0,"MIDC Khutala, Chandrapur - MPCB",,CPCB,Maharashtra Pollution Control Board,19.9775302,79.2337086,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Chhatrapati Sambhajinagar,5642.0,"More Chowk Waluj, Aurangabad - MPCB",,CPCB,Maharashtra Pollution Control Board,19.8389439,75.244448,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Dhule,3409473.0,"Deopur, Dhule - MPCB",,CPCB,Maharashtra Pollution Control Board,20.918946,74.776388,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Gondia,,,,,,,,False,False,,NO_MATCH
+Hinganghat,,,,,,,,False,False,,NO_MATCH
+Ichalkaranji,,,,,,,,False,False,,NO_MATCH
+Jalgaon,3409462.0,"Prabhat Colony, Jalgaon - MPCB",,CPCB,Maharashtra Pollution Control Board,21.001264,75.565602,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Jalna,3409463.0,"Old MIDC, Jalna - MPCB",,CPCB,Maharashtra Pollution Control Board,19.854616,75.905894,True,True,2026-09-29T19:45:00+05:30,MATCHED_PM25_PM10
+Kalyan-Dombivli,,,,,,,,False,False,,NO_MATCH
+Kolhapur,3409440.0,"Shivaji University, Kolhapur - MPCB",,CPCB,Maharashtra Pollution Control Board,16.6870449,74.2505872,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Latur,3409452.0,"Sawe Wadi, Latur - MPCB",,CPCB,Maharashtra Pollution Control Board,18.39963,76.57452,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Malegaon,3409474.0,"Mahesh Nagar, Malegaon - MPCB",,CPCB,Maharashtra Pollution Control Board,20.555712,74.529236,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Mira-Bhayandar,3409478.0,"Bhayandar West, Mira-Bhayandar - MPCB",,CPCB,Maharashtra Pollution Control Board,19.296481,72.840923,True,True,2026-09-29T19:45:00+05:30,MATCHED_PM25_PM10
+Mumbai,6945.0,"Kurla, Mumbai - MPCB",,CPCB,Maharashtra Pollution Control Board,19.0863,72.8888,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Nagpur,5621.0,"Opp GPO Civil Lines, Nagpur - MPCB",,CPCB,Maharashtra Pollution Control Board,21.152875,79.0517531,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Nanded-Waghala,,,,,,,,False,False,,NO_MATCH
+Nandurbar,,,,,,,,False,False,,NO_MATCH
+Nashik,5592.0,"Gangapur Road, Nashik - MPCB",,CPCB,Maharashtra Pollution Control Board,20.0073285,73.7762427,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Navi Mumbai,3409471.0,"Sector-2E Kalamboli, Navi Mumbai - MPCB",,CPCB,Maharashtra Pollution Control Board,19.02579,73.10297,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Osmanabad,,,,,,,,False,False,,NO_MATCH
+Panvel,,,,,,,,False,False,,NO_MATCH
+Parbhani,3409466.0,"Masoom Colony, Parbhani - MPCB",,CPCB,Maharashtra Pollution Control Board,19.265594,76.761463,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Pimpri-Chinchwad,3409528.0,"Savta Mali Nagar, Pimpri-Chinchwad - IITM",,CPCB,Indian Institute of Tropical Meteorology,18.614767,73.799516,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Pune,11609.0,"Mhada Colony, Pune - IITM",,CPCB,Indian Institute of Tropical Meteorology,18.57304,73.927715,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Sangli-Miraj,,,,,,,,False,False,,NO_MATCH
+Satara,6314877.0,"Koyana Nagar, Satara - MPCB",,N/A,OpenAQ admin,17.696651,74.003387,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Solapur,3409448.0,"Ratandeep Housing Society, Solapur - MPCB",,CPCB,Maharashtra Pollution Control Board,17.65439,75.90649,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Thane,3409322.0,"Pimpleshwar Mandir, Thane - MPCB",,CPCB,Maharashtra Pollution Control Board,19.192056,72.9585188,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Udgir,,,,,,,,False,False,,NO_MATCH
+Ulhasnagar,3409484.0,"Sidhi Vinayak Nagar, Ulhasnagar - MPCB",,CPCB,Maharashtra Pollution Control Board,19.235581,73.159121,True,True,2026-09-29T20:00:00+05:30,MATCHED_PM25_PM10
+Vasai-Virar,,,,,,,,False,False,,NO_MATCH
+Wardha,,,,,,,,False,False,,NO_MATCH
+Yavatmal,,,,,,,,False,False,,NO_MATCH

@@ -1,0 +1,92 @@
+# ==========================================
+# USAS - Git Ignore
+# ==========================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Node / React ----------
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# ---------- Python / Backend ----------
+backend/.venv/
+backend/venv/
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Temporary files ----------
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# ---------- Machine Learning ----------
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+models/trained/
+models/artifacts/
+
+# ---------- Generated data ----------
+data/processed/
+data/temp/
+!data/processed/
+data/processed/*
+!data/processed/master/
+data/processed/master/*
+!data/processed/master/USAS_city_indicator_master_clean.csv
+!data/processed/air_quality/
+!data/processed/air_quality/USAS_air_quality_processed.csv
+!data/processed/traffic/
+!data/processed/traffic/USAS_traffic_processed.csv
+!data/processed/green_space/
+!data/processed/green_space/USAS_green_space_processed.csv
+!data/processed/waste/
+!data/processed/waste/USAS_waste_indicator_2023.csv
+!data/processed/population/
+!data/processed/population/USAS_population_indicator_2011_compact.csv
+backend/data/api_cache/
+data/api_cache/
+
+# ---------- Coverage ----------
+.coverage
+htmlcov/
+coverage.xml
+
+# ---------- Build / Cache ----------
+.cache/
+.pytest_cache/
+
+# ---------- Docker ----------
+docker-compose.override.yml

@@ -1,0 +1,78 @@
+/* =========================
+   PROBLEM AREAS
+========================= */
+
+.problem-empty-state {
+  padding: 50px 35px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.problem-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff7ed;
+  color: #c2410c;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.problem-empty-state h2 {
+  color: #173b2b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.problem-empty-state > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.problem-process {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 35px;
+}
+
+.problem-process > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.problem-process span {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f5ee;
+  color: #176b45;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.problem-process p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .problem-process {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
