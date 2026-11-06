@@ -232,7 +232,7 @@ def calculate_cpcb_aqi(pm25=None, pm10=None):
 
     if not sub_indices:
         return None
-    return round(max(sub_indices), 1)
+    return int(round(max(sub_indices)))
 
 
 # --------------------------------------------------

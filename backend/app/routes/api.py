@@ -79,11 +79,9 @@ def _assessment(city):
             if live_air and (live_air.get("status") == "LIVE" or live_air.get("aqi") is not None):
                 is_live = (live_air.get("status") == "LIVE")
                 live_meta = live_air
-                if live_air.get("aqi") is not None:
-                    raw_value = live_air["aqi"]
-                source_note = f"OpenAQ API v3 Live Telemetry (Station #{live_air.get('station_id')})" if is_live else f"OpenAQ API Telemetry ({live_air.get('status')})"
+                source_note = f"CPCB CAAQMS Baseline with OpenAQ Live Telemetry (Station #{live_air.get('station_id')})"
             else:
-                source_note = "OpenAQ API / CPCB CAAQMS (Latest 2026 Baseline)"
+                source_note = "CPCB CAAQMS (Latest 2026 Baseline)"
 
         elif score_key == "traffic_pressure_score":
             metric = row.get("traffic_congestion_metric") or row.get("traffic_metric")

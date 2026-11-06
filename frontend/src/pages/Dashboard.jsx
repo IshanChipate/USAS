@@ -151,9 +151,9 @@ function Dashboard({
                 {fetchingAir
                   ? 'Connecting to OpenAQ...'
                   : liveAir?.status === 'LIVE'
-                  ? `AQI: ${liveAir.aqi ?? '—'} (PM2.5: ${liveAir.pm25} µg/m³)`
+                  ? `PM2.5: ${liveAir.pm25} µg/m³ ${liveAir.aqi ? `(Est. AQI: ${liveAir.aqi})` : ''}`
                   : liveAir?.status === 'CACHED'
-                  ? `Cached AQI: ${liveAir.aqi ?? '—'} (PM2.5: ${liveAir.pm25})`
+                  ? `PM2.5: ${liveAir.pm25} µg/m³ ${liveAir.aqi ? `(Cached AQI: ${liveAir.aqi})` : ''}`
                   : 'CPCB CAAQMS Baseline'}
               </strong>
               <small>
