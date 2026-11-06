@@ -151,17 +151,17 @@ function Dashboard({
                 {fetchingAir
                   ? 'Connecting to OpenAQ...'
                   : liveAir?.status === 'LIVE'
-                  ? `PM2.5: ${liveAir.pm25} µg/m³ ${liveAir.aqi ? `(Est. AQI: ${liveAir.aqi})` : ''}`
+                  ? `AQI: ${liveAir.aqi ?? '—'} · PM2.5: ${liveAir.pm25} µg/m³`
                   : liveAir?.status === 'CACHED'
-                  ? `PM2.5: ${liveAir.pm25} µg/m³ ${liveAir.aqi ? `(Cached AQI: ${liveAir.aqi})` : ''}`
+                  ? `AQI: ${liveAir.aqi ?? '—'} · PM2.5: ${liveAir.pm25} µg/m³`
                   : 'CPCB CAAQMS Baseline'}
               </strong>
               <small>
                 {liveAir?.status === 'LIVE'
-                  ? `🟢 Live 2026 Telemetry · Station #${liveAir.station_id}`
+                  ? `🟢 Live Today (${new Date().toLocaleDateString('en-GB')}) · Station #${liveAir.station_id}`
                   : liveAir?.status === 'CACHED'
-                  ? `🟡 Cached 2026 Telemetry · Station #${liveAir.station_id}`
-                  : 'Latest 2026 CAAQMS Baseline'}
+                  ? `🟡 Cached Telemetry · Station #${liveAir.station_id}`
+                  : 'Historical CPCB CAAQMS Baseline'}
               </small>
             </div>
           </div>

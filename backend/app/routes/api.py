@@ -47,9 +47,38 @@ def _assessment(city):
     except Exception as err:
         print(f"[API] OpenAQ live air check: {err}")
 
+    # Build active working row incorporating real-time live telemetry
+    active_row = dict(row)
+    if live_air and live_air.get("aqi") is not None:
+        live_aqi = int(round(live_air["aqi"]))
+        # Scale score: AQI <= 50 (Good) -> 100, AQI >= 250 (Severe) -> 10
+        if live_aqi <= 50:
+            live_score = 100.0
+        elif live_aqi >= 250:
+            live_score = 10.0
+        else:
+            live_score = round(100.0 - ((live_aqi - 50.0) / (250.0 - 50.0)) * 90.0, 2)
+
+        active_row["avg_aqi"] = live_aqi
+        active_row["air_quality_score"] = live_score
+        active_row["air_year"] = "Today (2026 Live)"
+
+        # Recalculate WSM overall sustainability score with live air indicator
+        config_weights = load_scoring_config()["weights"]
+        scored_indicators = {}
+        for sk in ["air_quality_score", "waste_management_score", "population_density_score", "green_space_score", "traffic_pressure_score"]:
+            sv = active_row.get(sk)
+            if sv is not None and not _is_nan(sv):
+                scored_indicators[sk] = float(sv)
+
+        if scored_indicators:
+            total_w = sum(config_weights.get(sk, 0.2) for sk in scored_indicators)
+            weighted_sum = sum(scored_indicators[sk] * config_weights.get(sk, 0.2) for sk in scored_indicators)
+            active_row["overall_sustainability_score"] = round(weighted_sum / total_w, 2)
+
     for score_key, (name, raw_key, unit, note, year_key) in INDICATORS.items():
-        raw_value = row.get(raw_key)
-        score_value = row.get(score_key)
+        raw_value = active_row.get(raw_key)
+        score_value = active_row.get(score_key)
         indicator_id = {
             "air_quality_score": "air_quality",
             "waste_management_score": "waste_management",
@@ -70,31 +99,33 @@ def _assessment(city):
         indicator_unit = provenance.get("unit") or unit
         metric = None
         metric_status = None
-        reference_year = row.get(year_key)
+        reference_year = active_row.get(year_key)
         is_live = False
         live_meta = None
 
         if score_key == "air_quality_score":
-            reference_year = "Latest (2026)"
-            if live_air and (live_air.get("status") == "LIVE" or live_air.get("aqi") is not None):
-                is_live = (live_air.get("status") == "LIVE")
+            if live_air and live_air.get("aqi") is not None:
+                is_live = True
                 live_meta = live_air
-                source_note = f"CPCB CAAQMS Baseline with OpenAQ Live Telemetry (Station #{live_air.get('station_id')})"
+                raw_value = int(round(live_air["aqi"]))
+                reference_year = "Today (2026 Live)"
+                source_note = f"OpenAQ API v3 Live Telemetry (Station #{live_air.get('station_id')})"
             else:
-                source_note = "CPCB CAAQMS (Latest 2026 Baseline)"
+                reference_year = "Historical Baseline (No active CAAQMS station)"
+                source_note = "CPCB CAAQMS Historical Baseline"
 
         elif score_key == "traffic_pressure_score":
-            metric = row.get("traffic_congestion_metric") or row.get("traffic_metric")
-            metric_status = row.get("traffic_congestion_status") or row.get("traffic_data_status")
+            metric = active_row.get("traffic_congestion_metric") or active_row.get("traffic_metric")
+            metric_status = active_row.get("traffic_congestion_status") or active_row.get("traffic_data_status")
             if score_value is None or _is_nan(score_value):
-                raw_value = row.get("traffic_value")
+                raw_value = active_row.get("traffic_value")
                 indicator_unit = "registered vehicles (non-scoring baseline)" if raw_value is not None and not _is_nan(raw_value) else "unavailable"
-                reference_year = row.get("traffic_year")
+                reference_year = active_row.get("traffic_year")
                 metric = "Registered Vehicles (Non-Scoring Context)"
                 metric_status = "unscored_context"
             else:
-                indicator_unit = row.get("traffic_congestion_unit") or indicator_unit
-                reference_year = row.get("traffic_congestion_year")
+                indicator_unit = active_row.get("traffic_congestion_unit") or indicator_unit
+                reference_year = active_row.get("traffic_congestion_year")
 
         ind_dict = {
             "key": score_key,
@@ -123,14 +154,14 @@ def _assessment(city):
     spatial = get_spatial_readiness(row["city_name"])
     return {
         "city": row["city_name"],
-        "overall_score": None if _is_nan(row["overall_sustainability_score"]) else round(float(row["overall_sustainability_score"]), 2),
-        "overall_sustainability_score": None if _is_nan(row["overall_sustainability_score"]) else round(float(row["overall_sustainability_score"]), 2),
-        "data_coverage_pct": int(row["data_coverage_pct"]),
-        "score_status": row["score_status"],
+        "overall_score": None if _is_nan(active_row.get("overall_sustainability_score")) else round(float(active_row["overall_sustainability_score"]), 2),
+        "overall_sustainability_score": None if _is_nan(active_row.get("overall_sustainability_score")) else round(float(active_row["overall_sustainability_score"]), 2),
+        "data_coverage_pct": int(active_row["data_coverage_pct"]),
+        "score_status": active_row["score_status"],
         "assessment_date": date.today().strftime("%B %d, %Y"),
         "indicators": indicators,
-        "indicator_classifications": classify_indicators(row),
-        "problem_areas": identify_problem_areas(row),
+        "indicator_classifications": classify_indicators(active_row),
+        "problem_areas": identify_problem_areas(active_row),
         "missing_indicators": [item["name"] for item in indicators if item["score"] is None],
         "spatial_feasibility": spatial,
         "live_air_quality": live_air,
