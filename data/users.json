@@ -3,16 +3,16 @@
     "id": "usr-ishan-admin",
     "name": "Ishan Chipate",
     "email": "ishan.chipate@usas.gov.in",
-    "password_hash": "a4347d561919e0a984fcedc0eaef7eab$1143bed1d7c641952635c97c4fcf8d01f96a556b1066dc67b568e8d8376adfd7",
+    "password_hash": "fec5983339406aff49fd1d8e68773167$04785638f8c2ba6e91a17e9d033a51534f4f59b1009d5f9cc49e0f3f63ad0c65",
     "role": "Administrator",
     "designation": "Chief Urban Systems Administrator",
     "department": "Maharashtra State Urban Development Directorate",
     "employee_id": "MH-UDD-DIR-001",
     "verification_evidence": "Statutory System Architect & Administrator Order No. UDD/2026/01",
     "status": "ACTIVE",
-    "must_change_password": true,
+    "must_change_password": false,
     "created_at": 1772400000,
-    "updated_at": 1793551250
+    "updated_at": 1793937050
   },
   {
     "id": "usr-5a785f2aa7",

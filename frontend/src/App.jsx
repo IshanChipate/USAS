@@ -18,6 +18,55 @@ import {
   logout,
 } from './services/api.js'
 
+const VALID_PAGES = [
+  'dashboard',
+  'assessment',
+  'indicators',
+  'problems',
+  'recommendations',
+  'impact',
+  'reports',
+  'user-management',
+]
+
+function parseHashLocation() {
+  try {
+    const raw = window.location.hash.replace(/^#\/?/, '')
+    if (!raw) return { page: null, city: null }
+    const [pathPart, queryPart] = raw.split('?')
+    const page = VALID_PAGES.includes(pathPart) ? pathPart : null
+    let city = null
+    if (queryPart) {
+      const params = new URLSearchParams(queryPart)
+      const c = params.get('city')
+      if (c) city = decodeURIComponent(c)
+    }
+    return { page, city }
+  } catch {
+    return { page: null, city: null }
+  }
+}
+
+function getInitialPage() {
+  const { page } = parseHashLocation()
+  if (page) return page
+  try {
+    const saved = localStorage.getItem('usas_current_page')
+    if (saved && VALID_PAGES.includes(saved)) return saved
+  } catch {}
+  return 'dashboard'
+}
+
+function getInitialCity() {
+  const { city } = parseHashLocation()
+  if (city) return city
+  try {
+    const saved = localStorage.getItem('usas_selected_city')
+    if (saved) return saved
+  } catch {}
+  return ''
+}
+
 function App() {
   const [currentUser, setCurrentUser] = useState(() => {
     try {
@@ -59,14 +108,39 @@ function App() {
   const [pwdError, setPwdError] = useState('')
   const [pwdSuccess, setPwdSuccess] = useState('')
 
-  // App page state
-  const [currentPage, setCurrentPage] = useState('dashboard')
-  const [selectedCity, setSelectedCity] = useState('')
+  // App page state with refresh persistence
+  const [currentPage, setCurrentPage] = useState(getInitialPage)
+  const [selectedCity, setSelectedCity] = useState(getInitialCity)
   const [cities, setCities] = useState([])
   const [assessment, setAssessment] = useState(null)
   const [loading, setLoading] = useState(false)
   const [apiError, setApiError] = useState('')
   const [impactScenario, setImpactScenario] = useState(null)
+
+  // Sync navigation & selected city to URL hash and localStorage
+  useEffect(() => {
+    try {
+      if (currentPage) localStorage.setItem('usas_current_page', currentPage)
+      if (selectedCity) localStorage.setItem('usas_selected_city', selectedCity)
+    } catch {}
+
+    const query = selectedCity ? `?city=${encodeURIComponent(selectedCity)}` : ''
+    const targetHash = `#/${currentPage}${query}`
+    if (window.location.hash !== targetHash) {
+      window.history.replaceState(null, '', targetHash)
+    }
+  }, [currentPage, selectedCity])
+
+  // Handle browser back/forward buttons
+  useEffect(() => {
+    const handleHashChange = () => {
+      const { page, city } = parseHashLocation()
+      if (page && page !== currentPage) setCurrentPage(page)
+      if (city && city !== selectedCity) setSelectedCity(city)
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [currentPage, selectedCity])
 
   // Verify stored session token on mount
   useEffect(() => {
@@ -90,7 +164,7 @@ function App() {
       })
   }, [])
 
-  // Load cities once authenticated
+  // Load cities once authenticated (preserving existing selection)
   useEffect(() => {
     if (!isLoggedIn) return
 
@@ -98,7 +172,16 @@ function App() {
       .then(({ cities: availableCities }) => {
         setCities(availableCities)
         if (availableCities.length) {
-          setSelectedCity((current) => current || availableCities[0])
+          setSelectedCity((current) => {
+            if (current && availableCities.includes(current)) {
+              return current
+            }
+            const saved = localStorage.getItem('usas_selected_city')
+            if (saved && availableCities.includes(saved)) {
+              return saved
+            }
+            return availableCities[0]
+          })
         }
       })
       .catch((error) => setApiError(error.message))
@@ -214,6 +297,10 @@ function App() {
     setCurrentUser(null)
     setIsLoggedIn(false)
     setCurrentPage('dashboard')
+    try {
+      localStorage.removeItem('usas_current_page')
+    } catch {}
+    window.location.hash = '#/dashboard'
   }
 
   const handleStartAssessment = (city) => {

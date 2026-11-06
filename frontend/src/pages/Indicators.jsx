@@ -158,7 +158,15 @@ function Indicators({ city, assessment, loading, apiError }) {
                       <strong className="triad-value">
                         {formatRawValue(item)} <span className="triad-unit">{item.unit}</span>
                       </strong>
-                      <small className="triad-sub">Reference Period: {item.reference_year || 'Historical'}</small>
+                      <small className="triad-sub">
+                        Reference Period: {item.reference_year || 'Historical'}
+                        {item.is_live && ' · 🟢 Live'}
+                      </small>
+                      {item.is_live && item.live_meta && (
+                        <div style={{ marginTop: '4px', fontSize: '11px', color: '#059669', fontWeight: 600 }}>
+                          PM2.5: {item.live_meta.pm25} µg/m³ · Station #{item.live_meta.station_id}
+                        </div>
+                      )}
                     </div>
 
                     <div className="triad-col triad-score">

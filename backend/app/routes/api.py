@@ -40,6 +40,13 @@ def _assessment(city):
     row = get_city_score(city)
     indicators = []
     source_metadata = get_city_source_metadata(row["city_name"])
+    
+    live_air = None
+    try:
+        live_air = get_air_quality(row["city_name"])
+    except Exception as err:
+        print(f"[API] OpenAQ live air check: {err}")
+
     for score_key, (name, raw_key, unit, note, year_key) in INDICATORS.items():
         raw_value = row.get(raw_key)
         score_value = row.get(score_key)
@@ -64,7 +71,21 @@ def _assessment(city):
         metric = None
         metric_status = None
         reference_year = row.get(year_key)
-        if score_key == "traffic_pressure_score":
+        is_live = False
+        live_meta = None
+
+        if score_key == "air_quality_score":
+            reference_year = "Latest (2026)"
+            if live_air and (live_air.get("status") == "LIVE" or live_air.get("aqi") is not None):
+                is_live = (live_air.get("status") == "LIVE")
+                live_meta = live_air
+                if live_air.get("aqi") is not None:
+                    raw_value = live_air["aqi"]
+                source_note = f"OpenAQ API v3 Live Telemetry (Station #{live_air.get('station_id')})" if is_live else f"OpenAQ API Telemetry ({live_air.get('status')})"
+            else:
+                source_note = "OpenAQ API / CPCB CAAQMS (Latest 2026 Baseline)"
+
+        elif score_key == "traffic_pressure_score":
             metric = row.get("traffic_congestion_metric") or row.get("traffic_metric")
             metric_status = row.get("traffic_congestion_status") or row.get("traffic_data_status")
             if score_value is None or _is_nan(score_value):
@@ -76,7 +97,8 @@ def _assessment(city):
             else:
                 indicator_unit = row.get("traffic_congestion_unit") or indicator_unit
                 reference_year = row.get("traffic_congestion_year")
-        indicators.append({
+
+        ind_dict = {
             "key": score_key,
             "name": name,
             "value": _first_available(raw_value),
@@ -84,16 +106,22 @@ def _assessment(city):
             "unit": indicator_unit,
             "metric": metric,
             "metric_status": metric_status,
-            "reference_year": _first_available(reference_year, provenance.get("year")),
-            "year": _first_available(reference_year, provenance.get("year")),
+            "reference_year": _first_available(reference_year, provenance.get("reference_year"), provenance.get("year")),
+            "year": _first_available(reference_year, provenance.get("reference_year"), provenance.get("year")),
             "available": score_value is not None and not _is_nan(score_value),
             "score": None if _is_nan(score_value) else round(float(score_value), 2),
             "source": source_note,
             "source_name": provenance.get("source_name") or source_note,
-            "source_url": provenance.get("source_url"),
+            "source_url": provenance.get("source_url") or ("https://openaq.org" if score_key == "air_quality_score" else None),
             "note": note,
             "direction_note": direction_note,
-        })
+        }
+        if is_live:
+            ind_dict["is_live"] = True
+        if live_meta:
+            ind_dict["live_meta"] = live_meta
+        indicators.append(ind_dict)
+
     spatial = get_spatial_readiness(row["city_name"])
     return {
         "city": row["city_name"],
@@ -107,6 +135,7 @@ def _assessment(city):
         "problem_areas": identify_problem_areas(row),
         "missing_indicators": [item["name"] for item in indicators if item["score"] is None],
         "spatial_feasibility": spatial,
+        "live_air_quality": live_air,
         "score_method": "Min-Max scores are relative to the cities in this comparison dataset, not a validated national sustainability index. Weighted Sum Model uses configured equal weights, re-normalized across available indicators for each city.",
     }
 

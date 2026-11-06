@@ -172,9 +172,12 @@ def fetch_live_air_quality(city_name):
     if pm25 is None and pm10 is None:
         raise RuntimeError(f"No PM2.5 or PM10 data available for {city_name}")
 
+    aqi_val = calculate_cpcb_aqi(pm25, pm10)
+
     data = {
         "city": city_name,
         "station_id": station_id,
+        "aqi": aqi_val,
         "pm25": pm25,
         "pm25_measurement_time": pm25_time,
         "pm10": pm10,
@@ -182,10 +185,54 @@ def fetch_live_air_quality(city_name):
         "unit": "µg/m³",
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "source": "OpenAQ API v3",
-        "status": "LIVE"
+        "status": "LIVE",
+        "year": "2026"
     }
 
     return data
+
+
+# --------------------------------------------------
+# CPCB AQI SUB-INDEX CALCULATION (OFFICIAL INDIAN STANDARD)
+# --------------------------------------------------
+
+def calculate_cpcb_aqi(pm25=None, pm10=None):
+    """
+    Calculate official Indian CPCB Air Quality Index from PM2.5 and PM10 concentrations.
+    Uses official breakpoint linear interpolation formulas.
+    """
+    sub_indices = []
+    if pm25 is not None and pm25 >= 0:
+        if pm25 <= 30:
+            sub_indices.append((50 / 30) * pm25)
+        elif pm25 <= 60:
+            sub_indices.append(50 + ((100 - 50) / (60 - 30)) * (pm25 - 30))
+        elif pm25 <= 90:
+            sub_indices.append(100 + ((200 - 100) / (90 - 60)) * (pm25 - 60))
+        elif pm25 <= 120:
+            sub_indices.append(200 + ((300 - 200) / (120 - 90)) * (pm25 - 90))
+        elif pm25 <= 250:
+            sub_indices.append(300 + ((400 - 300) / (250 - 120)) * (pm25 - 120))
+        else:
+            sub_indices.append(min(500, 400 + ((500 - 400) / (380 - 250)) * (pm25 - 250)))
+
+    if pm10 is not None and pm10 >= 0:
+        if pm10 <= 50:
+            sub_indices.append(pm10)
+        elif pm10 <= 100:
+            sub_indices.append(50 + (pm10 - 50))
+        elif pm10 <= 250:
+            sub_indices.append(100 + ((200 - 100) / (250 - 100)) * (pm10 - 100))
+        elif pm10 <= 350:
+            sub_indices.append(200 + ((300 - 200) / (350 - 250)) * (pm10 - 250))
+        elif pm10 <= 430:
+            sub_indices.append(300 + ((400 - 300) / (430 - 350)) * (pm10 - 350))
+        else:
+            sub_indices.append(min(500, 400 + ((500 - 400) / (500 - 430)) * (pm10 - 430)))
+
+    if not sub_indices:
+        return None
+    return round(max(sub_indices), 1)
 
 
 # --------------------------------------------------

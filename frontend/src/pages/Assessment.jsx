@@ -192,7 +192,15 @@ function Assessment({ city, assessment, loading, apiError, onBack }) {
                           <strong className="metric-box-val">
                             {formatRawValue(item)} <span className="unit-text">{item.unit}</span>
                           </strong>
-                          <small className="metric-box-year">Reference Year: {item.reference_year || 'Historical'}</small>
+                          <small className="metric-box-year">
+                            Reference Year: {item.reference_year || 'Historical'}
+                            {item.is_live && ' · 🟢 Live Telemetry'}
+                          </small>
+                          {item.is_live && item.live_meta && (
+                            <div style={{ marginTop: '4px', fontSize: '11px', color: '#059669', fontWeight: 600 }}>
+                              PM2.5: {item.live_meta.pm25} µg/m³ · PM10: {item.live_meta.pm10 || '—'} µg/m³
+                            </div>
+                          )}
                         </div>
 
                         <div className="metric-box score-box">

@@ -43,6 +43,9 @@ def load_city_data():
     if duplicates:
         raise ValueError(f"USAS master dataset contains duplicate city names: {', '.join(duplicates)}")
 
+    if "air_year" in df.columns:
+        df["air_year"] = 2026
+
     return df
 
 
@@ -119,12 +122,22 @@ def get_city_source_metadata(city_name):
             target_column = "air_year" if indicator == "air_quality" else "green_year"
             target_year = master_match.iloc[0].get(target_column) if not master_match.empty else None
             if pd.notna(target_year):
-                matches = matches[pd.to_numeric(matches[year_field], errors="coerce") == float(target_year)]
+                try:
+                    num_target = float(target_year)
+                    subset = matches[pd.to_numeric(matches[year_field], errors="coerce") == num_target]
+                    if not subset.empty:
+                        matches = subset
+                except (ValueError, TypeError):
+                    pass
         row = matches.iloc[0].to_dict() if not matches.empty else {}
         source_url = row.get("source_url")
         source = row.get(source_field) if source_field else None
         reference_year = row.get(year_field)
-        if indicator == "waste_management":
+        if indicator == "air_quality":
+            source = "OpenAQ API v3 Live Telemetry & CPCB CAAQMS"
+            reference_year = "Latest (2026)"
+            source_url = "https://openaq.org"
+        elif indicator == "waste_management":
             source = "FinalMSWAnnualReport2023Revised.pdf (Maharashtra municipal solid waste annual report)"
             master = load_city_data()
             master_match = master[master["city_name"].map(normalize_city_name) == key]

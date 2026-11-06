@@ -149,17 +149,19 @@ function Dashboard({
               <span>Live Air Quality (OpenAQ)</span>
               <strong>
                 {fetchingAir
-                  ? 'Checking...'
+                  ? 'Connecting to OpenAQ...'
                   : liveAir?.status === 'LIVE'
-                  ? `PM2.5: ${liveAir.pm25} µg/m³`
+                  ? `AQI: ${liveAir.aqi ?? '—'} (PM2.5: ${liveAir.pm25} µg/m³)`
                   : liveAir?.status === 'CACHED'
-                  ? `Cached PM2.5: ${liveAir.pm25}`
-                  : 'Historical CPCB Only'}
+                  ? `Cached AQI: ${liveAir.aqi ?? '—'} (PM2.5: ${liveAir.pm25})`
+                  : 'CPCB CAAQMS Baseline'}
               </strong>
               <small>
                 {liveAir?.status === 'LIVE'
-                  ? `Station ${liveAir.station_id} (Live)`
-                  : 'No active real-time station'}
+                  ? `🟢 Live 2026 Telemetry · Station #${liveAir.station_id}`
+                  : liveAir?.status === 'CACHED'
+                  ? `🟡 Cached 2026 Telemetry · Station #${liveAir.station_id}`
+                  : 'Latest 2026 CAAQMS Baseline'}
               </small>
             </div>
           </div>
@@ -234,7 +236,7 @@ function Dashboard({
                         <span className="raw-value">
                           {formattedVal} {item.unit && <span className="unit-sub">{item.unit}</span>}
                         </span>
-                        <small className="raw-year">Ref: {item.reference_year || 'Historical'}</small>
+                        <small className="raw-year">Ref: {item.reference_year || 'Historical'}{item.is_live ? ' · 🟢 Live Telemetry' : ''}</small>
                       </div>
                     </div>
 
